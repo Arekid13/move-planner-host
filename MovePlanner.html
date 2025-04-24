@@ -17,14 +17,12 @@
 
   /* ===== FILES, REMINDERS, PDF, GANTT  (unchanged) ===== */
 
-  // 🚀 INIT
+// 🚀 INIT
 loadData();
 renderTasks();
+populateSectionOptions();              // <-- run NOW
 
-document.addEventListener('DOMContentLoaded', () => {
-  populateSectionOptions();
-});
-
+document.addEventListener('DOMContentLoaded', populateSectionOptions); // <-- and on normal loads
 </script>
 </body>
 </html>
