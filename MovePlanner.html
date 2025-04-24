@@ -17,10 +17,14 @@
 
   /* ===== FILES, REMINDERS, PDF, GANTT  (unchanged) ===== */
 
-  /* 🚀 INIT */
-  loadData();
-  renderTasks();
-  populateSectionOptions();   // <-- this line populates the dropdown
+  // 🚀 INIT
+loadData();
+renderTasks();
+
+document.addEventListener('DOMContentLoaded', () => {
+  populateSectionOptions();
+});
+
 </script>
 </body>
 </html>
